@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ocean</title>
+        <link href="images/logo.png" rel="icon">
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+        <!-- Font Awesome CDN -->
+        <script src="https://use.fontawesome.com/157b1c3f52.js"></script>
+
+        <!-- Google Font -->
+        <link href='https://fonts.googleapis.com/css?family=Beth Ellen' rel='stylesheet'>
+    </head>
+    <body>
+
+        <!-- Navigation bar content -->
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <i class="fa fa-bars fa-lg"></i>
+                </button>
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">Ocean</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a class="nav-link" href="#">Home</a></li>
+                        <li><a class="nav-link" href="#">About Us</a></li>
+                        <li><a class="nav-link" href="#">Gallery</a></li>
+                        <li><a class="nav-link" href="#">Contact</a></li>
+                        <li><a class="btn btn-warning nav-link" href="#booking-form">Book Now</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Jumbotron Content -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="heading">“Take only Memories, Leave only Footprints”</div>
+                </div>
+
+                <div class="row search-form" id="booking-form">
+                    
+                    <form>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-2 col-md-offset-1">
+                                <input list="city" name="city" class="form-control" placeholder="Choose a place">
+                                <datalist id="city">
+                                    <option>Goa</option>
+                                    <option>Amritsar</option>
+                                    <option>Agra</option>
+                                    <option>Jaipur</option>
+                                    <option>Manali</option>
+                                    <option>Ooty</option>
+                                </datalist>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-2">
+                                <input type="text" name="checkin" class="form-control" onfocus="this.type='date'" placeholder="Checkin date">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-2">
+                                <input type="text" name="checkout" class="form-control" onfocus="this.type='date'" placeholder="Checkout date">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-xs-12 col-md-2">
+                                <select class="form-control">
+                                    <option value="">Persons</option>
+                                    <option value="one">One</option>
+                                    <option value="two">Two</option>
+                                    <option value="group">Group</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-warning col-xs-12 col-md-2 form-btn">Search</a>
+                    </form>
+                   
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
